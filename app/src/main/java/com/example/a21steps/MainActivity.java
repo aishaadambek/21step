@@ -173,6 +173,160 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        btn11 = (Button) findViewById(R.id.button11);
+        SharedPreferences sharedPreferences11 = getSharedPreferences("Step11" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences11.getBoolean("Passed", false)){
+            btn11.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn11.setEnabled(true);
+        }
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Step11Descr.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn12 = (Button) findViewById(R.id.button12);
+        SharedPreferences sharedPreferences12 = getSharedPreferences("Step12" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences12.getBoolean("Passed", false)){
+            btn12.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn12.setEnabled(true);
+        }
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Step12Descr.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn13 = (Button) findViewById(R.id.button13);
+        SharedPreferences sharedPreferences13 = getSharedPreferences("Step13" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences13.getBoolean("Passed", false)){
+            btn13.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn13.setEnabled(true);
+        }
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Step13Descr.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn14 = (Button) findViewById(R.id.button14);
+        SharedPreferences sharedPreferences14 = getSharedPreferences("Step14" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences14.getBoolean("Passed", false)){
+            btn14.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn14.setEnabled(true);
+        }
+        btn14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // Intent intent = new Intent(MainActivity.this, Step14Descr.class);
+               // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn15 = (Button) findViewById(R.id.button15);
+        SharedPreferences sharedPreferences15 = getSharedPreferences("Step15" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences15.getBoolean("Passed", false)){
+            btn15.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn15.setEnabled(true);
+        }
+        btn15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step15Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn16 = (Button) findViewById(R.id.button16);
+        SharedPreferences sharedPreferences16 = getSharedPreferences("Step16" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences16.getBoolean("Passed", false)){
+            btn16.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn16.setEnabled(true);
+        }
+        btn16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step16Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn17 = (Button) findViewById(R.id.button17);
+        SharedPreferences sharedPreferences17 = getSharedPreferences("Step17" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences17.getBoolean("Passed", false)){
+            btn17.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn17.setEnabled(true);
+        }
+        btn17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step17Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn18 = (Button) findViewById(R.id.button18);
+        SharedPreferences sharedPreferences18 = getSharedPreferences("Step18" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences18.getBoolean("Passed", false)){
+            btn18.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn18.setEnabled(true);
+        }
+        btn18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step18Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn19 = (Button) findViewById(R.id.button19);
+        SharedPreferences sharedPreferences19 = getSharedPreferences("Step19" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences19.getBoolean("Passed", false)){
+            btn19.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn19.setEnabled(true);
+        }
+        btn19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step19Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn20 = (Button) findViewById(R.id.button20);
+        SharedPreferences sharedPreferences20 = getSharedPreferences("Step20" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences20.getBoolean("Passed", false)){
+            btn20.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn20.setEnabled(true);
+        }
+        btn20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step20Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btn21 = (Button) findViewById(R.id.button21);
+        SharedPreferences sharedPreferences21 = getSharedPreferences("Step21" + username, Context.MODE_PRIVATE);
+        if(sharedPreferences21.getBoolean("Passed", false)){
+            btn21.setBackgroundTintList(ContextCompat.getColorStateList(MainActivity.this, R.color.titleColor));
+            btn21.setEnabled(true);
+        }
+        btn21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = new Intent(MainActivity.this, Step21Descr.class);
+                // MainActivity.this.startActivity(intent);
+            }
+        });
+
 }
 
     public void onBackPressed() {

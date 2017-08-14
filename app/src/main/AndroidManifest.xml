@@ -416,6 +416,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.a21steps.AboutUs" />
         </activity>
+        <activity android:name=".UserProfile"
+            android:screenOrientation="portrait">
+        </activity>
 
         <activity
             android:name=".Step9Activity"
@@ -506,6 +509,50 @@
         </activity>
 
         <activity
+            android:name=".Step12Activity"
+            android:parentActivityName=".Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step12Info" />
+        </activity>
+        <activity
+            android:name=".Step12Ans"
+            android:parentActivityName=".Step12Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step12Activity" />
+        </activity>
+        <activity
+            android:name=".Step12Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step12Info"
+            android:parentActivityName=".Step12Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step12Descr" />
+        </activity>
+        <activity
+            android:name=".Step12Right"
+            android:parentActivityName=".Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step12Info" />
+        </activity>
+        <activity
+            android:name=".Step12Wrong"
+            android:parentActivityName=".Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step12Info" />
+        </activity>
+
+        <activity
             android:name=".Step11Activity"
             android:parentActivityName=".Step11Info"
             android:screenOrientation="portrait">
@@ -548,7 +595,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.a21steps.Step11Info" />
         </activity>
-
 
     </application>
 
