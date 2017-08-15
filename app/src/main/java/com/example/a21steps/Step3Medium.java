@@ -18,6 +18,21 @@ import android.widget.Button;
 public class Step3Medium extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+        final String username = userInfo.getString("username", null);
+
+        SharedPreferences pref = getSharedPreferences("Activity3" + username, Context.MODE_PRIVATE);
+
+        if(pref.getBoolean("activity_executed", false)){
+            //do nothing
+        } else {
+            SharedPreferences.Editor ed = pref.edit();
+            ed.putBoolean("activity_executed", true);
+            ed.putInt("Progress", 1);
+            ed.apply();
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.step3_result_medium);
 

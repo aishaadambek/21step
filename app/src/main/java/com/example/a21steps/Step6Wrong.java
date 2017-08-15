@@ -18,6 +18,7 @@ import android.widget.Button;
 public class Step6Wrong extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.step6_result_wrong);
 

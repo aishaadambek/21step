@@ -16,8 +16,23 @@ import android.widget.Button;
  */
 
 public class Step2Medium extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+        final String username = userInfo.getString("username", null);
+
+        SharedPreferences pref = getSharedPreferences("Activity2" + username, Context.MODE_PRIVATE);
+
+        if(pref.getBoolean("activity_executed", false)){
+            //do nothing
+        } else {
+            SharedPreferences.Editor ed = pref.edit();
+            ed.putBoolean("activity_executed", true);
+            ed.putInt("Progress", 1);
+            ed.apply();
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.step2_result_medium);
 

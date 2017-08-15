@@ -30,11 +30,11 @@ public class Step11Activity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonBack:
-                Intent intent = new Intent(Step11Activity.this, Step10Info.class);
+                Intent intent = new Intent(Step11Activity.this, Step11Info.class);
                 Step11Activity.this.startActivity(intent);
                 break;
             case R.id.buttonNext:
-                Intent intent2 = new Intent(Step11Activity.this, Step10Ans.class);
+                Intent intent2 = new Intent(Step11Activity.this, Step11Ans.class);
                 Step11Activity.this.startActivity(intent2);
                 break;
             default:

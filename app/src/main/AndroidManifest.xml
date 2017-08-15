@@ -596,6 +596,250 @@
                 android:value="com.example.a21steps.Step11Info" />
         </activity>
 
+        <activity
+            android:name=".Step14Activity"
+            android:parentActivityName=".Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step14Info" />
+        </activity>
+        <activity
+            android:name=".Step14Ans"
+            android:parentActivityName=".Step14Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step14Activity" />
+        </activity>
+        <activity
+            android:name=".Step14Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step14Info"
+            android:parentActivityName=".Step14Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step14Descr" />
+        </activity>
+        <activity
+            android:name=".Step14Right"
+            android:parentActivityName=".Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step14Info" />
+        </activity>
+        <activity
+            android:name=".Step14Wrong"
+            android:parentActivityName=".Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step14Info" />
+        </activity>
+
+        <activity
+            android:name=".Step13Activity"
+            android:parentActivityName=".Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step13Info" />
+        </activity>
+        <activity
+            android:name=".Step13Ans"
+            android:parentActivityName=".Step13Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step13Activity" />
+        </activity>
+        <activity
+            android:name=".Step13Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step13Info"
+            android:parentActivityName=".Step13Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step13Descr" />
+        </activity>
+        <activity
+            android:name=".Step13Right"
+            android:parentActivityName=".Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step13Info" />
+        </activity>
+        <activity
+            android:name=".Step13Wrong"
+            android:parentActivityName=".Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step13Info" />
+        </activity>
+
+        <activity
+            android:name=".Step15Activity"
+            android:parentActivityName=".Step15Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step15Info" />
+        </activity>
+        <activity
+            android:name=".Step15Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step15Info"
+            android:parentActivityName=".Step15Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step15Descr" />
+        </activity>
+
+        <activity
+            android:name=".Step16Activity"
+            android:parentActivityName=".Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step16Info" />
+        </activity>
+        <activity
+            android:name=".Step16Ans"
+            android:parentActivityName=".Step16Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step16Activity" />
+        </activity>
+        <activity
+            android:name=".Step16Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step16Info"
+            android:parentActivityName=".Step16Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step16Descr" />
+        </activity>
+        <activity
+            android:name=".Step16Right"
+            android:parentActivityName=".Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step16Info" />
+        </activity>
+        <activity
+            android:name=".Step16Wrong"
+            android:parentActivityName=".Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step16Info" />
+        </activity>
+
+        <activity
+            android:name=".Step17Activity"
+            android:parentActivityName=".Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step17Info" />
+        </activity>
+        <activity
+            android:name=".Step17Ans"
+            android:parentActivityName=".Step17Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step17Activity" />
+        </activity>
+        <activity
+            android:name=".Step17Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step17Info"
+            android:parentActivityName=".Step17Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step17Descr" />
+        </activity>
+        <activity
+            android:name=".Step17Right"
+            android:parentActivityName=".Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step17Info" />
+        </activity>
+        <activity
+            android:name=".Step17Wrong"
+            android:parentActivityName=".Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step17Info" />
+        </activity>
+
+        <activity
+            android:name=".Step18Activity"
+            android:parentActivityName=".Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step18Info" />
+        </activity>
+        <activity
+            android:name=".Step18Ans"
+            android:parentActivityName=".Step18Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step18Activity" />
+        </activity>
+        <activity
+            android:name=".Step18Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Step18Info"
+            android:parentActivityName=".Step18Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step18Descr" />
+        </activity>
+        <activity
+            android:name=".Step18Right"
+            android:parentActivityName=".Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step18Info" />
+        </activity>
+        <activity
+            android:name=".Step18Wrong"
+            android:parentActivityName=".Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.a21steps.Step18Info" />
+        </activity>
+
+        <activity
+            android:name=".Step19Descr"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

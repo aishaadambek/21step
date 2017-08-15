@@ -224,8 +224,8 @@ public class MainActivity extends AppCompatActivity{
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent intent = new Intent(MainActivity.this, Step14Descr.class);
-               // MainActivity.this.startActivity(intent);
+               Intent intent = new Intent(MainActivity.this, Step14Descr.class);
+               MainActivity.this.startActivity(intent);
             }
         });
 
@@ -238,8 +238,8 @@ public class MainActivity extends AppCompatActivity{
         btn15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent intent = new Intent(MainActivity.this, Step15Descr.class);
-                // MainActivity.this.startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, Step15Descr.class);
+                MainActivity.this.startActivity(intent);
             }
         });
 

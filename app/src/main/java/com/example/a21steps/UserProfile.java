@@ -14,8 +14,9 @@ import android.widget.TextView;
 
 public class UserProfile extends AppCompatActivity {
 
-    TextView nameTV, usernameTV, ageTV;
+    TextView nameTV, usernameTV, ageTV, userScore;
     Button logOut;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class UserProfile extends AppCompatActivity {
         if(getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
+
+        SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+        username = userInfo.getString("username", null);
+
+        userScore = (TextView) findViewById(R.id.userScore);
+        nameTV = (TextView) findViewById(R.id.name);
+        usernameTV = (TextView) findViewById(R.id.username);
+        ageTV = (TextView) findViewById(R.id.age);
 
         logOut = (Button) findViewById(R.id.logOut);
         logOut.setOnClickListener(new View.OnClickListener() {
@@ -62,11 +71,19 @@ public class UserProfile extends AppCompatActivity {
             }
         });
 
-        nameTV = (TextView) findViewById(R.id.name);
-        usernameTV = (TextView) findViewById(R.id.username);
-        ageTV = (TextView) findViewById(R.id.age);
-
         displayInfo();
+        setUserScore();
+    }
+
+    private void setUserScore() {
+
+        SharedPreferences[] shPr = new SharedPreferences[21];
+        for(int i = 0; i < 21; i++){
+            shPr[i] = getSharedPreferences("Activity" + (i+1) + username, Context.MODE_PRIVATE);
+            int current = Integer.parseInt(userScore.getText().toString());
+            int score = shPr[i].getInt("Progress", 0);
+            userScore.setText(current + score + "");
+        }
     }
 
     public void displayInfo(){

@@ -19,6 +19,20 @@ public class Step5Right extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+        final String username = userInfo.getString("username", null);
+
+        SharedPreferences pref = getSharedPreferences("Activity5" + username, Context.MODE_PRIVATE);
+
+        if(pref.getBoolean("activity_executed", false)){
+            //do nothing
+        } else {
+            SharedPreferences.Editor ed = pref.edit();
+            ed.putBoolean("activity_executed", true);
+            ed.putInt("Progress", 2);
+            ed.apply();
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.step5_result_right);
 
