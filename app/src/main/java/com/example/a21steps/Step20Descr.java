@@ -13,28 +13,28 @@ import android.widget.Button;
  * Created by User on 15.08.2017.
  */
 
-public class Step19Info extends AppCompatActivity {
+public class Step20Descr extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.step19_info);
+        setContentView(R.layout.step20_description);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        Button clear = (Button) findViewById(R.id.buttonClear);
-        clear.setOnClickListener(new View.OnClickListener() {
+        Button btn = (Button) findViewById(R.id.buttonInfo);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Step19Info.this, Step19Activity.class);
-                Step19Info.this.startActivity(intent);
+                Intent intent = new Intent(Step20Descr.this, Step20Info.class);
+                Step20Descr.this.startActivity(intent);
             }
         });
+
     }
 
     @Override
@@ -47,20 +47,22 @@ public class Step19Info extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.miMap:
-                Intent settings = new Intent(Step19Info.this, MainActivity.class);
-                Step19Info.this.startActivity(settings);
+                Intent settings = new Intent(Step20Descr.this, MainActivity.class);
+                Step20Descr.this.startActivity(settings);
                 return true;
             case R.id.miProfile:
-                Intent profile = new Intent(Step19Info.this, UserProfile.class);
-                Step19Info.this.startActivity(profile);
+                Intent profile = new Intent(Step20Descr.this, UserProfile.class);
+                Step20Descr.this.startActivity(profile);
                 return true;
             case R.id.miAboutUs:
-                Intent aboutUs = new Intent(Step19Info.this, AboutUs.class);
-                Step19Info.this.startActivity(aboutUs);
+                Intent aboutUs = new Intent(Step20Descr.this, AboutUs.class);
+                Step20Descr.this.startActivity(aboutUs);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
+
 

@@ -1,6 +1,8 @@
 package com.example.a21steps;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,12 +15,12 @@ import android.widget.Button;
  * Created by User on 15.08.2017.
  */
 
-public class Step19Info extends AppCompatActivity {
+public class Step20Wrong extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.step19_info);
+        setContentView(R.layout.step20_result_wrong);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -27,12 +29,20 @@ public class Step19Info extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        Button clear = (Button) findViewById(R.id.buttonClear);
-        clear.setOnClickListener(new View.OnClickListener() {
+        Button btn = (Button) findViewById(R.id.buttonNextStep);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Step19Info.this, Step19Activity.class);
-                Step19Info.this.startActivity(intent);
+                SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+                final String username = userInfo.getString("username", null);
+
+                MainActivity.btn21.setEnabled(true);
+                SharedPreferences sharedPreferences = getSharedPreferences("Step21" + username, Context.MODE_PRIVATE);
+                sharedPreferences.edit().putBoolean("Passed", true).apply();
+
+                Intent intent = new Intent(Step20Wrong.this, Step21Descr.class);
+                Step20Wrong.this.startActivity(intent);
+                finish();
             }
         });
     }
@@ -47,16 +57,16 @@ public class Step19Info extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.miMap:
-                Intent settings = new Intent(Step19Info.this, MainActivity.class);
-                Step19Info.this.startActivity(settings);
+                Intent settings = new Intent(Step20Wrong.this, MainActivity.class);
+                Step20Wrong.this.startActivity(settings);
                 return true;
             case R.id.miProfile:
-                Intent profile = new Intent(Step19Info.this, UserProfile.class);
-                Step19Info.this.startActivity(profile);
+                Intent profile = new Intent(Step20Wrong.this, UserProfile.class);
+                Step20Wrong.this.startActivity(profile);
                 return true;
             case R.id.miAboutUs:
-                Intent aboutUs = new Intent(Step19Info.this, AboutUs.class);
-                Step19Info.this.startActivity(aboutUs);
+                Intent aboutUs = new Intent(Step20Wrong.this, AboutUs.class);
+                Step20Wrong.this.startActivity(aboutUs);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

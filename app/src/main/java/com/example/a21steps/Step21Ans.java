@@ -8,17 +8,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 
 /**
  * Created by User on 15.08.2017.
  */
 
-public class Step19Info extends AppCompatActivity {
+public class Step21Ans extends AppCompatActivity {
+
+    RadioButton rb1, rb2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.step19_info);
+        setContentView(R.layout.step21_answers);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -27,12 +30,22 @@ public class Step19Info extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        Button clear = (Button) findViewById(R.id.buttonClear);
+        rb1 = (RadioButton) findViewById(R.id.radioButtonStep21Right);
+        rb2 = (RadioButton) findViewById(R.id.radioButtonStep21Wrong);
+
+        Button clear = (Button) findViewById(R.id.button2);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Step19Info.this, Step19Activity.class);
-                Step19Info.this.startActivity(intent);
+                if(rb1.isChecked()){
+                    Intent intent = new Intent(Step21Ans.this, Step21Right.class);
+                    Step21Ans.this.startActivity(intent);
+                    finish();
+                } else if(rb2.isChecked()){
+                    Intent intent = new Intent(Step21Ans.this, Step21Wrong.class);
+                    Step21Ans.this.startActivity(intent);
+                    finish();
+                }
             }
         });
     }
@@ -47,20 +60,19 @@ public class Step19Info extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.miMap:
-                Intent settings = new Intent(Step19Info.this, MainActivity.class);
-                Step19Info.this.startActivity(settings);
+                Intent settings = new Intent(Step21Ans.this, MainActivity.class);
+                Step21Ans.this.startActivity(settings);
                 return true;
             case R.id.miProfile:
-                Intent profile = new Intent(Step19Info.this, UserProfile.class);
-                Step19Info.this.startActivity(profile);
+                Intent profile = new Intent(Step21Ans.this, UserProfile.class);
+                Step21Ans.this.startActivity(profile);
                 return true;
             case R.id.miAboutUs:
-                Intent aboutUs = new Intent(Step19Info.this, AboutUs.class);
-                Step19Info.this.startActivity(aboutUs);
+                Intent aboutUs = new Intent(Step21Ans.this, AboutUs.class);
+                Step21Ans.this.startActivity(aboutUs);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 }
-

@@ -15,7 +15,7 @@ import android.widget.Button;
  * Created by User on 15.08.2017.
  */
 
-public class Step18Right extends AppCompatActivity {
+public class Step20Right extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class Step18Right extends AppCompatActivity {
         SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
         final String username = userInfo.getString("username", null);
 
-        SharedPreferences pref = getSharedPreferences("Activity18" + username, Context.MODE_PRIVATE);
+        SharedPreferences pref = getSharedPreferences("Activity20" + username, Context.MODE_PRIVATE);
 
         if(pref.getBoolean("activity_executed", false)){
             //do nothing
@@ -35,7 +35,7 @@ public class Step18Right extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.step18_result_right);
+        setContentView(R.layout.step20_result_right);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -52,12 +52,12 @@ public class Step18Right extends AppCompatActivity {
                 SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
                 final String username = userInfo.getString("username", null);
 
-                MainActivity.btn19.setEnabled(true);
-                SharedPreferences sharedPreferences = getSharedPreferences("Step19" + username, Context.MODE_PRIVATE);
+                MainActivity.btn21.setEnabled(true);
+                SharedPreferences sharedPreferences = getSharedPreferences("Step21" + username, Context.MODE_PRIVATE);
                 sharedPreferences.edit().putBoolean("Passed", true).apply();
 
-                Intent intent = new Intent(Step18Right.this, Step19Descr.class);
-                Step18Right.this.startActivity(intent);
+                Intent intent = new Intent(Step20Right.this, Step21Descr.class);
+                Step20Right.this.startActivity(intent);
                 finish();
             }
         });
@@ -73,19 +73,20 @@ public class Step18Right extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.miMap:
-                Intent settings = new Intent(Step18Right.this, MainActivity.class);
-                Step18Right.this.startActivity(settings);
+                Intent settings = new Intent(Step20Right.this, MainActivity.class);
+                Step20Right.this.startActivity(settings);
                 return true;
             case R.id.miProfile:
-                Intent profile = new Intent(Step18Right.this, UserProfile.class);
-                Step18Right.this.startActivity(profile);
+                Intent profile = new Intent(Step20Right.this, UserProfile.class);
+                Step20Right.this.startActivity(profile);
                 return true;
             case R.id.miAboutUs:
-                Intent aboutUs = new Intent(Step18Right.this, AboutUs.class);
-                Step18Right.this.startActivity(aboutUs);
+                Intent aboutUs = new Intent(Step20Right.this, AboutUs.class);
+                Step20Right.this.startActivity(aboutUs);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 }
+
