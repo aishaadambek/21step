@@ -69,7 +69,7 @@
         android:layout_marginTop="8dp"
         android:text="Шаг 12"
         android:textColor="@color/titleColor"
-        android:textSize="12.5"
+        android:textSize="12.5sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.0"

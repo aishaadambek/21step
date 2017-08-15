@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/textColor"
     android:orientation="vertical"
-    tools:context="com.example.a21steps.Info">
+    tools:context="com.enotik.a21steps.Info">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

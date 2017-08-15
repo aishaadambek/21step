@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.a21steps.Step4Ans"
+    tools:context="com.enotik.a21steps.Step4Ans"
     android:background="@drawable/map">
 
     <android.support.v7.widget.Toolbar
